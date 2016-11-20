@@ -1,0 +1,19 @@
+{
+  "name": "sweet_water",
+  "version": "1.0.0",
+  "description": "sweet h20 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcolepeterson/sweet_water.git"
+  },
+  "author": "cole.peterson@possible.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcolepeterson/sweet_water/issues"
+  },
+  "homepage": "https://github.com/rcolepeterson/sweet_water#readme"
+}
