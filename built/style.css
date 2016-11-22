@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    background-color: black;
+    background: url(images/sweet-water-credo-live.jpg) no-repeat center top fixed;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/sweet-water-credo-live.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    background: #000;
+    padding: 5px;
+    display: inline-block;
+}
+
+p {
+    color: white;
+    width:320px;
+    font-size: 14px;
+}
+
+
+/* menu */
+
+.menu {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+}
+
+.menu span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+}
+
+.menu span:before,
+.menu span:after {
+    position: absolute;
+    content: '';
+}
+
+.menu span,
+.menu span:before,
+.menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    display: block;
+}
+
+.menu span:before {
+    margin-top: -12px;
+}
+
+.menu span:after {
+    margin-top: 12px;
+}
+
+.menu {
+    -webkit-transition: .2s ease;
+}
+
+
+/* example 2 */
+
+.menu span:before,
+.menu span:after {
+    -webkit-transition: .2s ease;
+}
+
+.menu.open span:before,
+.menu.open span:after {
+    margin-top: 0px;
+}
+
+
+/*mobile nav*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mobile-container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+#mobile-nav {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    visibility: hidden;
+    z-index: 150;
+}
+
+#mobile-nav li {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -moz-transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    background: #272727;
+    opacity: 0;
+}
+
+#mobile-nav li+li {
+    border-top: 2px solid #000;
+}
+
+#mobile-nav li:nth-of-type(1) {
+    -webkit-transition-delay: 0.05s;
+    -moz-transition-delay: 0.05s;
+    -o-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+#mobile-nav li:nth-of-type(2) {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+#mobile-nav li:nth-of-type(3) {
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+#mobile-nav li:nth-of-type(4) {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#mobile-nav li:nth-of-type(5) {
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.open #mobile-nav {
+    visibility: visible;
+}
+
+.open #mobile-nav li {
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+#mobile-nav a {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {}

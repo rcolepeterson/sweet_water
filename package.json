@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/rcolepeterson/sweet_water/issues"
   },
-  "homepage": "https://github.com/rcolepeterson/sweet_water#readme"
+  "homepage": "https://github.com/rcolepeterson/sweet_water#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^1.0.0"
+  }
 }
