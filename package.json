@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rcolepeterson/sweet_water#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.2",
     "gulp": "^3.9.1",
     "gulp-file-include": "^1.0.0"
   }

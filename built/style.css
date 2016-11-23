@@ -7,20 +7,52 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+a {
+    text-decoration: none;
     color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
     background: #000;
     padding: 5px;
     display: inline-block;
 }
 
 p {
-    color: white;
-    width:320px;
     font-size: 14px;
+}
+
+p.about {
+    font-size: 18px;
+}
+
+p.large {
+    font-size: 20px;
+}
+
+.offsetLeft {
+    margin: auto;
 }
 
 
@@ -68,9 +100,6 @@ p {
     -webkit-transition: .2s ease;
 }
 
-
-/* example 2 */
-
 .menu span:before,
 .menu span:after {
     -webkit-transition: .2s ease;
@@ -100,10 +129,6 @@ h2 {
     margin: 0;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-p {
-    text-align: justify;
 }
 
 #mobile-nav {
@@ -193,4 +218,71 @@ p {
     text-decoration: none;
 }
 
-@media (min-width: 768px) {}
+
+/* form */
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .mobile-container {
+        margin: 0 auto;
+        position: absolute;
+        width: 320px;
+        top: 38px;
+        right: 0;
+    }
+    p.about {
+        width: 640px;
+        margin-left: 40px;
+    }
+    p.large {
+        font-size: 26px;
+    }
+    .offsetLeft {
+        margin-left: 40px;
+    }
+}
