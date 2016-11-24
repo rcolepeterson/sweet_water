@@ -97,7 +97,7 @@ p.large {
 .menu span:after {
     width: 30px;
     height: 6px;
-    background-color: #000;
+    background-color: #fff;
     display: block;
 }
 
