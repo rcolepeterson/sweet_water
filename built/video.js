@@ -16,6 +16,8 @@ var checkPlatform = function () {
     $cover.removeClass('hidden');
     if (theVideo === null) {
       theVideo = runVideo();
+    }else{
+      theVideo.vidRescale();
     }
   }
   else {
@@ -127,7 +129,7 @@ var runVideo = function () {
     //     tv.pauseVideo();
     // });
 
-  return tv;
+  return {tv:tv,vidRescale:vidRescale};
 };
 
 (function ($, sr) {
