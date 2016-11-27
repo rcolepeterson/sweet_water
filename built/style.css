@@ -2,7 +2,7 @@
 body {
     background-color: black;
     background: url(images/sweet-water-credo-live.jpg) no-repeat center top fixed;
-    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/sweet-water-credo-live.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/sweet-water-credo-live.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,6 +26,11 @@ a:hover {
     text-decoration: none;
 }
 
+linkMe:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
 a:focus {
     text-decoration: none;
 }
@@ -33,6 +38,10 @@ a:focus {
 a:hover,
 a:active {
     text-decoration: none;
+}
+
+.linkMe {
+    text-decoration: underline !important;
 }
 
 h1 {
@@ -68,16 +77,21 @@ p.large {
     margin-top: 120px;
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* menu */
 
 .menu {
-    position: absolute;
+    position: fixed;
     display: block;
     width: 30px;
     height: 30px;
     right: 20px;
     top: 20px;
+    z-index: 999;
 }
 
 .menu span {
@@ -110,12 +124,17 @@ p.large {
 }
 
 .menu {
-    -webkit-transition: .2s ease;
+  -moz-transition:.2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
 }
 
 .menu span:before,
 .menu span:after {
     -webkit-transition: .2s ease;
+    -moz-transition:.2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
 }
 
 .menu.open span:before,
@@ -300,4 +319,63 @@ h2 {
     .offsetLeft {
         margin-left: 40px;
     }
+}
+
+
+/*social*/
+
+symbol,
+a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased
+}
+
+a.symbol:before {
+    content: attr(title);
+    font-size: 130%
+}
+
+.social {
+    font-size: 46px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+}
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url(./fonts/MonoSocialIconsFont-1.10.eot);
+    src: url(./fonts/MonoSocialIconsFont-1.10.eot?#iefix) format("embedded-opentype"), url(./fonts/MonoSocialIconsFont-1.10.woff) format("woff"), url(./fonts/MonoSocialIconsFont-1.10.ttf) format("truetype"), url(./fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont) format("svg");
+    src: url(./fonts/MonoSocialIconsFont-1.10.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.symbol,
+a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased
+}
+
+a.symbol:before {
+    content: attr(title);
+    font-size: 130%
 }
