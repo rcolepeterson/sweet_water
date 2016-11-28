@@ -68,6 +68,7 @@ var runVideo = function () {
   function onPlayerReady() {
     tv.loadVideoById(vid[currVid]);
     tv.mute();
+    vidRescale();
   }
 
   function onPlayerStateChange(e) {

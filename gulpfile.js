@@ -16,6 +16,8 @@ gulp.task('fileinclude', function() {
     '!built/**',
     '!dist',
     '!dist/**',
+    '!node_modules',
+    '!node_modules/**',
   ])
   .pipe(fileinclude({
     prefix: '@@',
