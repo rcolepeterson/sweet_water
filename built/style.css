@@ -54,13 +54,8 @@ p {
     font-size: 14px;
 }
 
-p.about {
-    font-size: 18px;
-    margin-bottom: 200px;
-}
-
 p.large {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .logo,
@@ -248,7 +243,7 @@ h2 {
     font-size: 1.125rem;
     color: white;
     display: block;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     text-decoration: none;
 }
@@ -302,29 +297,10 @@ h2 {
     background-color: #fff;
 }
 
-@media (min-width: 768px) {
-    .mobile-container {
-        margin: 0 auto;
-        position: absolute;
-        width: 320px;
-        top: 38px;
-        right: 0;
-    }
-    p.about {
-        width: 640px;
-        margin-left: 40px;
-        margin-bottom: 20px;
-    }
-    p.large {
-        font-size: 26px;
-    }
-    .offsetLeft {
-        margin-left: 40px;
-    }
-}
-
-
 /*social*/
+.social {
+  display: none;
+}
 
 symbol,
 a.symbol:before {
@@ -346,12 +322,6 @@ a.symbol:before {
     font-size: 130%
 }
 
-.social {
-    font-size: 46px;
-    position: fixed;
-    bottom: 20px;
-    z-index: 999;
-}
 
 @font-face {
     font-family: 'Mono Social Icons Font';
@@ -380,4 +350,33 @@ a.symbol:before {
 a.symbol:before {
     content: attr(title);
     font-size: 130%
+}
+
+
+@media (min-width: 768px) {
+    .mobile-container {
+        margin: 0 auto;
+        position: absolute;
+        width: 320px;
+        top: 38px;
+        right: 0;
+    }
+    p.about {
+        width: 640px;
+        margin-left: 40px;
+    }
+    p.large {
+        font-size: 26px;
+    }
+    .offsetLeft {
+        margin-left: 40px;
+    }
+
+    .social {
+        display: block;
+        font-size: 46px;
+        position: fixed;
+        bottom: 20px;
+        z-index: 999;
+    }
 }
