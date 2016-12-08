@@ -42,10 +42,14 @@ gulp.task('serve', ['fileinclude'], function() {
     }
   });
 
+
   gulp.watch(['**/*.html',
     '!built',
     '!built/**'
   ], ['fileinclude', 'reloadme']);
+
+  gulp.watch(['./app/styles/*.css'], ['css', 'reloadme']);
+
 });
 
 gulp.task('js', function () {
@@ -53,6 +57,11 @@ gulp.task('js', function () {
   return gulp.src('built/**.js')
     .pipe(uglify())
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('css', function(){
+  return gulp.src("app/styles/**.*")
+      .pipe(gulp.dest('built'));
 });
 
 gulp.task('html', function() {
