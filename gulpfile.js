@@ -12,7 +12,7 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task('fileinclude', function() {
   gulp.src([
-    '**/*.html',
+    './app/**/*.html',
     '!built',
     '!built/**',
     '!dist',
@@ -50,6 +50,7 @@ gulp.task('serve', ['fileinclude'], function() {
   ], ['fileinclude', 'reloadme']);
 
   gulp.watch(['./app/styles/*.css'], ['css', 'reloadme']);
+  gulp.watch(['./app/js/*.js'], ['dev-js', 'reloadme']);
 
 });
 
@@ -64,6 +65,10 @@ gulp.task('css', function(){
   return gulp.src("app/styles/**.*")
       .pipe(gulp.dest('built'));
 });
+gulp.task('dev-js', function(){
+  return gulp.src("app/js/**.*")
+      .pipe(gulp.dest('built'));
+});
 
 gulp.task('html', function() {
   return gulp.src('built/**/**.html')
@@ -75,6 +80,11 @@ gulp.task('images', function() {
   gulp.src('built/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('move-images', function() {
+  gulp.src('./app/images/*')
+    .pipe(gulp.dest('./built/images'));
 });
 
 gulp.task('lint', function() {
@@ -104,10 +114,16 @@ gulp.task('clean', function () {
   ]);
 });
 
-gulp.task('fonts', function() {
-  return gulp.src('built/fonts/*.{eot,svg,ttf,woff,woff2}')
+gulp.task('move-fonts', function() {
+  return gulp.src('./app/fonts/*.{eot,svg,ttf,woff,woff2}')
   .pipe(gulp.dest('.tmp/fonts'))
-  .pipe(gulp.dest('dist/fonts'));
+  .pipe(gulp.dest('./built/fonts'));
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('./built/fonts/*.{eot,svg,ttf,woff,woff2}')
+  .pipe(gulp.dest('.tmp/fonts'))
+  .pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('default', function() {

@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    @@include('../meta.html',{ "name": "about", "path": "/about/" })
-    @@include('../loadCSS.html')
-    @@include('../inlineStyles.html')
+    @@include('../templates/meta.html',{ "name": "about", "path": "/about/" })
+    @@include('../templates/loadCSS.html')
+    @@include('../templates/inlineStyles.html')
     <script>
     var ss = loadCSS( "../style.css" );
     onloadCSS( ss, function() {
@@ -15,14 +15,14 @@
 
 <body>
 <div class="content">
-    @@include('../nav.html')
+    @@include('../templates/nav.html')
 
         <p class="offsetTop about large">Sweet Water is the Seattle band whose music combines elements of punk, pop, grunge and new wave to deliver on the promises of rock and roll.
 
             <br><br>Singer Adam Czeisler, guitarist Rich Credo, bassist Cole Peterson and drummer Chris Friel write songs, cut records, make videos and play shows to bring the rock to the people.<br></br> Albums include Superfriends, Suicide, Ter, Clear
             The Tarmac, Dance Floor Kills and Parc Boys.</p>
 
-    @@include('../social.html')</div> @@include('../scripts.html')
+    @@include('../templates/social.html')</div> @@include('../templates/scripts.html')
 </body>
 
 </html>

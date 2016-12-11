@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    @@include('../meta.html',{ "name": "social", "path": "/social/" })
-    @@include('../loadCSS.html')
-    @@include('../inlineStyles.html')
+    @@include('../templates/meta.html',{ "name": "social", "path": "/social/" })
+    @@include('../templates/loadCSS.html')
+    @@include('../templates/inlineStyles.html')
     <script>
     var ss = loadCSS( "../style.css" );
     onloadCSS( ss, function() {
@@ -24,9 +24,9 @@
 
 <body>
 <div class="content">
-    @@include('../nav.html')
-    @@include('../social.html')
-  </div> @@include('../scripts.html')
+    @@include('../templates/nav.html')
+    @@include('../templates/social.html')
+  </div> @@include('../templates/scripts.html')
 </body>
 
 </html>

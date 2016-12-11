@@ -1,8 +1,8 @@
 <html>
 <head>
-    @@include('../meta.html',{ "name": "contact", "path": "/contact/" })
-    @@include('../loadCSS.html')
-    @@include('../inlineStyles.html')
+    @@include('../templates/meta.html',{ "name": "contact", "path": "/contact/" })
+    @@include('../templates/loadCSS.html')
+    @@include('../templates/inlineStyles.html')
     <script>
     var ss = loadCSS( "../style.css" );
     onloadCSS( ss, function() {
@@ -14,9 +14,9 @@
 
 <body>
   <div class="content">
-    @@include('../nav.html')
+    @@include('../templates/nav.html')
     <p class="large offsetLeft offsetTop"> <a class="linkMe" href="mailto:info@sweetwaterrocks.com">info@sweetwaterrocks.com</a></p>
-    @@include('../social.html')</div> @@include('../scripts.html')
+    @@include('../templates/social.html')</div> @@include('../templates/scripts.html')
 </body>
 
 </html>

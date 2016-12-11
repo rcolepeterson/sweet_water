@@ -1,9 +1,9 @@
   <html class="no-js">
 <head>
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-    @@include('./meta.html',{ "name": "home", "path": "/" })
-    @@include('./loadCSS.html')
-    @@include('./inlineStyles.html')
+    @@include('./templates/meta.html',{ "name": "home", "path": "/" })
+    @@include('./templates/loadCSS.html')
+    @@include('./templates/inlineStyles.html')
     <script>
       var ss = loadCSS( "style.css" );
     onloadCSS( ss, function() {
@@ -24,9 +24,9 @@
     <div class="tv">
         <div class="screen mute" id="tv"></div>
     </div>
-    @@include('./nav.html') @@include('./social.html')
+    @@include('./templates/nav.html') @@include('./templates/social.html')
 </div>
-    @@include('./scripts.html')
+    @@include('./templates/scripts.html')
     <script defer src="./video.js"></script>
 </body>
 
