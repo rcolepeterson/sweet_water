@@ -72,7 +72,10 @@ gulp.task('dev-js', function(){
 
 gulp.task('html', function() {
   return gulp.src('built/**/**.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({
+      minifyJS: true,
+      minifyCSS: true,
+      collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 });
 

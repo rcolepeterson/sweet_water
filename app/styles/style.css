@@ -62,12 +62,7 @@ p.large {
     font-size: 24px;
 }
 
-.logo,
-.menu {
-    position: fixed;
-    z-index: 999;
-    top: 10px;
-}
+
 
 .offsetLeft {
     margin: auto;
@@ -190,6 +185,7 @@ a.symbol:before {
 
 
 @media (min-width: 768px) {
+
     .mobile-container {
         margin: 0 auto;
         position: absolute;

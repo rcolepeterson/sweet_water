@@ -1,8 +1,10 @@
 <style>
+
+
 body {
   background-color: black;
-  background: url(/images/sweet-water-credo-live.jpg) no-repeat center top fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/images/sweet-water-credo-live.jpg');
+
+  background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/images/sweet-water-credo-live_480.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,14 +15,59 @@ body {
   margin-right: 15px;
 }
 
+@media only screen and (min-width : 480px) {
+  body {
+    background-color: black;
+
+    background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/images/sweet-water-credo-live.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+}
+
+
 h1 {
   margin-top: 0;
   color: white;
   font-family: 'Conv_ALBA____', sans-serif;
 }
 
+.topBar {
+    background-color: black;
+    clear: both;
+    height: 58px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+		top:0;
+    padding: 20px;
+    z-index: 999;
+}
+
+.logo,
+.menu {
+    position: fixed;
+    z-index: 999;
+    top: 4px;
+}
+
+.menu {
+	top:14px;
+}
+
 .content {
   visibility: hidden;
+}
+
+@media (min-width:768px){
+  .topBar{
+    background-color: transparent;
+  }
 }
 
 /* menu */
@@ -31,7 +78,7 @@ h1 {
     width: 30px;
     height: 30px;
     right: 20px;
-    top: 20px;
+
     z-index: 999;
 }
 
