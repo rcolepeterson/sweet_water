@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    @@include('../templates/meta.html',{ "name": "about", "path": "/about/" })
+    @@include('../templates/meta.html',{ "name": "about", "path": "/about/", "desc":"Sweet Water is a rock and roll band from Seattle, Washington." })
     @@include('../templates/loadCSS.html')
     @@include('../templates/inlineStyles.html')
     <script>
@@ -10,17 +10,21 @@
       document.getElementsByClassName('content')[0].style.visibility = 'visible';
     });
     </script>
+    <style>
+    a {color: #FFA500;}
+    .social a { color: #fff;}
+    </style>
     <noscript><link rel="stylesheet" href="../style.css" /></noscript>
 </head>
 
 <body>
-<div class="content">
+<div id="cont" class="content">
     @@include('../templates/nav.html')
 
         <p class="offsetTop about large">Sweet Water is the Seattle band whose music combines elements of punk, pop, grunge and new wave to deliver on the promises of rock and roll.
 
-            <br><br>Singer Adam Czeisler, guitarist Rich Credo, bassist Cole Peterson and drummer Chris Friel write songs, cut records, make videos and play shows to bring the rock to the people.<br></br> Albums include Superfriends, Suicide, Ter, Clear
-            The Tarmac, Dance Floor Kills and Parc Boys.</p>
+            <br><br>Singer Adam Czeisler, guitarist Rich Credo, bassist Cole Peterson and drummer Chris Friel write songs, cut records, make videos and play shows to bring the rock to the people.<br></br> Albums include <a href="https://itunes.apple.com/us/album/sweet-water/id881264791" target="_blank">Sweet Water,</a> <a href="https://itunes.apple.com/us/album/superfriends/id867328884" target="_blank">Superfriends,</a> <a href="https://itunes.apple.com/us/album/suicide/id303062927" target="_blank">Suicide,</a> <a href="https://itunes.apple.com/us/album/ter/id303062786" target="_blank">Ter,</a> <a href="https://itunes.apple.com/us/album/clear-the-tarmac/id299281616" target="_blank">Clear The Tarmac,</a> <a href="https://itunes.apple.com/us/album/dance-floor-kills-ep/id628160309" target="_blank">Dance Floor Kills</a> and <a href="https://www.amazon.com/Parc-Boys/dp/B0000063CJ/ref=sr_1_1?ie=UTF8&qid=1482127516&sr=8-1&keywords=parc+boys" target="_blank">Parc Boys.</a>
+        </p>
 
     @@include('../templates/social.html')</div> @@include('../templates/scripts.html')
 </body>
