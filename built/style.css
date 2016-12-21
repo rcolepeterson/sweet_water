@@ -33,6 +33,9 @@ a:active {
 .linkMe {
     text-decoration: underline !important;
 }
+.orange {
+	color:orange;
+}
 
 p {
     font-size: 14px;

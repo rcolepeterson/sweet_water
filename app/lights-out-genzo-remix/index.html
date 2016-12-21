@@ -1,0 +1,53 @@
+<html>
+<head>
+    @@include('../templates/meta.html',{ "name": "Lights-Out-Genzo-Remix", "path": "/lights-out-genzo-remix/",
+    "desc": "Lights Out Genzo Remix - Single by Sweet Water" })
+    @@include('../templates/loadCSS.html')
+    @@include('../templates/inlineStyles.html')
+    <script>
+    var ss = loadCSS( "../style.css" );
+    onloadCSS( ss, function() {
+      document.getElementsByClassName('content')[0].style.visibility = 'visible';
+    });
+    </script>
+    <style>
+    .content{
+      max-width: 320px;
+      }
+      </style>
+    <noscript><link rel="stylesheet" href="../style.css" /></noscript>
+</head>
+
+<body>
+  <div class="content offsetLeft">
+    @@include('../templates/nav.html')
+    <p class="large offsetTop">
+      Lights Out Genzo Remix.
+      </p>
+      <p>
+        New remix of the hit song, Lights Out, off the <a class="orange" href="https://itunes.apple.com/us/album/dance-floor-kills-ep/id628160309" target="_blank">Dance Floor Kills EP</a> by Sweet Water.
+      </p>
+      <div>
+      <a href = "https://itunes.apple.com/us/album/lights-out-genzo-remix-single/id1161513030"><img width="170" height="170"src = "http://is5.mzstatic.com/image/thumb/Music71/v4/38/df/e1/38dfe1a9-ec3c-b35b-c8c2-dbc3caff7df9/source/170x170bb.jpg" /></a>
+    </div>
+    <p class = "large">
+    <a class="orange" href="https://itunes.apple.com/us/album/lights-out-genzo-remix-single/id1161513030" >Buy Single Now</a></p>
+    @@include('../templates/social.html')</div> @@include('../templates/scripts.html')
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "name": "Lights Out Genzo Remix",
+  "description": "New remix of the hit song, Lights Out, by Sweet Water.",
+  "url": "http://sweetwaterrocks.com//lights-out-genzo-remix/",
+  "sameAs": "https://itunes.apple.com/us/album/lights-out-genzo-remix-single/id1161513030",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "15"
+  }
+}
+</script>
+</body>
+
+</html>
