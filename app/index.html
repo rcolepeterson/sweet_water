@@ -17,6 +17,7 @@
 </head>
 <body>
 <div class="content">
+    
     <div class="cover hidden">
         <div class="hi">
             <p><br><span><em>un</em>mute</span></p>
@@ -25,7 +26,13 @@
     <div class="tv">
         <div class="screen mute" id="tv"></div>
     </div>
-    @@include('./templates/nav.html') @@include('./templates/social.html')
+    @@include('./templates/nav.html')
+    <div class = "frontblurb"> 
+        <h2>New Lights Out remix available now.</h2>
+        <h2 class="">
+        <a class="orange" href="/lights-out-genzo-remix">Learn More</a></h2>
+    </div>
+    @@include('./templates/social.html')
 </div>
     @@include('./templates/scripts.html')
     <script defer src="./video.js"></script>

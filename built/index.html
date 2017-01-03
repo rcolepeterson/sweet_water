@@ -142,15 +142,14 @@
 body {
   background-color: black;
   background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/images/sweet-water-credo-live_480.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-left: 30px;
   margin-right: 30px;
-  background-position: 0 58px;
+ 
+  background-repeat: no-repeat;
+  background-position: right 57px; 
 }
 
 @media only screen and (min-width : 480px) {
@@ -380,6 +379,7 @@ h2 {
 </head>
 <body>
 <div class="content">
+    
     <div class="cover hidden">
         <div class="hi">
             <p><br><span><em>un</em>mute</span></p>
@@ -405,7 +405,13 @@ h2 {
         </ul>
     </div>
 </div>
- <div class="social">
+
+    <div class = "frontblurb"> 
+        <h2>New Lights Out remix available now.</h2>
+        <h2 class="">
+        <a class="orange" href="/lights-out-genzo-remix">Learn More</a></h2>
+    </div>
+    <div class="social">
     <a href="https://www.facebook.com/pages/Sweet-Water/39501184556?v=wall" target="_blank" class='symbol'>&#xe227;</a>
     <a href="https://twitter.com/sweetwaterrocks" target="_blank" class='symbol'>&#xe286;</a>
     <a href="https://itunes.apple.com/us/artist/sweet-water/id201527955" target="_blank" class='symbol'>&#xe250;</a>

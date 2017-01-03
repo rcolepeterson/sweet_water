@@ -141,15 +141,14 @@
 body {
   background-color: black;
   background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/images/sweet-water-credo-live_480.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-left: 30px;
   margin-right: 30px;
-  background-position: 0 58px;
+ 
+  background-repeat: no-repeat;
+  background-position: right 57px; 
 }
 
 @media only screen and (min-width : 480px) {
@@ -392,7 +391,7 @@ h2 {
 </head>
 
 <body>
-  <div class="content offsetLeft">
+  <div id="cont" class="content offsetLeft">
     <div class="topBar">
   <a class="logo" href="/">
     <h1>sweet water</h1>
