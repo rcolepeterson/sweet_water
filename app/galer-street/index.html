@@ -1,0 +1,61 @@
+<html>
+<head>
+    @@include('../templates/meta.html',{ "name": "Galer-Street", "path": "/galer-street/",
+    "desc": "Listen to the new Galer Street - Single by Sweet Water" })
+    @@include('../templates/loadCSS.html')
+    @@include('../templates/inlineStyles.html')
+    <script>
+    var ss = loadCSS( "../style.css" );
+    onloadCSS( ss, function() {
+      document.getElementsByClassName('content')[0].style.visibility = 'visible';
+    });
+    </script>
+    <style>
+    .content{
+      max-width: 320px;
+
+      }
+      .desc {
+        font-size: 24px;
+      }
+    @media only screen and (min-width : 768px) {
+
+        .desc {
+          font-size: 16px;
+        }
+      }
+      </style>
+    <noscript><link rel="stylesheet" href="../style.css" /></noscript>
+</head>
+
+<body>
+  <div id="cont" class="content offsetLeft">
+    @@include('../templates/nav.html')
+    <div class = "frontblurb"> 
+      <h2>New Galer Street Single</h2>
+      <h2 class="">
+      <a class="orange" href="/galer-street">Listen Now</a></h2>
+<br/>
+      <iframe src="https://open.spotify.com/embed/album/5NcBNgDSD2wPOTKqfXid5u" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+  </div>
+    @@include('../templates/social.html')</div> @@include('../templates/scripts.html')
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "name": "Lights Out Genzo Remix",
+  "description": "New remix of the hit song, Lights Out, by Sweet Water.",
+  "url": "http://sweetwaterrocks.com//lights-out-genzo-remix/",
+  "sameAs": "https://itunes.apple.com/us/album/lights-out-genzo-remix-single/id1161513030",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "15"
+  }
+}
+</script>
+</body>
+
+</html>
